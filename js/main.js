@@ -5,6 +5,9 @@ function onBallClick() {
     const diff = getRandomInt(20, 60)
     gBallSize += diff
     var ball = document.querySelector('.ball')
+
+    ball.style.backgroundColor = getRandomColor()
+
     if (gBallSize > 400) {
         gBallSize = 100
         ball.style.width = (gBallSize) + 'px'
