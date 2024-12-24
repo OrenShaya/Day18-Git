@@ -1,22 +1,21 @@
 'use strict'
 
 var gBallSize = 100
-function onBallClick() {
+function onBallClick(maxDiameter) {
     const diff = getRandomInt(20, 60)
     gBallSize += diff
-    var ball = document.querySelector('.ball')
-
     ball.style.backgroundColor = getRandomColor()
-
-    if (gBallSize > 400) {
+    
+    var ball = document.querySelector('.ball')
+    if (gBallSize > maxDiameter) {
         gBallSize = 100
         ball.style.width = (gBallSize) + 'px'
         ball.style.height = (gBallSize) + 'px'
         ball.innerText = gBallSize
     } 
     else {
-        ball.style.width = (gBallSize + diff) + 'px'
-        ball.style.height = (gBallSize + diff) + 'px'
+        ball.style.width = (gBallSize + 50) + 'px'
+        ball.style.height = (gBallSize + 50) + 'px'
         ball.innerText = gBallSize
     }
 }
