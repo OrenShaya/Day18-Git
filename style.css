@@ -11,3 +11,17 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
+.ball {
+    display: flex;
+    /* center the ball */
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    color: bisque;
+}
