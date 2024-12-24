@@ -6,6 +6,5 @@ function onBallClick() {
     ball.style.width = (gBallSize + 50) + 'px'
     ball.style.height = (gBallSize + 50) + 'px'
     gBallSize += 50
-    ball.innerText = gBallSize
-    
+    ball.innerText = gBallSize   
 }
